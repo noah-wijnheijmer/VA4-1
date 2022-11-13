@@ -311,7 +311,7 @@ elif pages == 'Visualisaties':
     st.pyplot(fig1) 
     st.markdown("Hieronder wordt een grafiek weergegeven met een overzicht van de 10 laagste unemployment rate landen wereldwijd.")
     st.pyplot(fig3)
-    folium_static(m)
+    st.folium(m)
 elif pages == 'Wereld kaart':
     st.subheader('Hier word een visualisatie weergegeven van de unemployment rate wereldwijd')
 elif pages == 'Einde':
