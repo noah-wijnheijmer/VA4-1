@@ -170,7 +170,7 @@ leg_kwds= {'label': 'Unemployment rate',
            'orientation': "horizontal"
            
            }
- dfn1= dfn.plot(column='Unemployment Rate',
+dfn1= dfn.plot(column='Unemployment Rate',
                 cmap='RdGy', #kleurenpalette
                 edgecolor= (0,0,0,0.6), #opacity = 0.6
                 figsize=(9,8),
