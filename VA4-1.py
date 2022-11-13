@@ -290,7 +290,8 @@ st.sidebar.title('Navigatie')
 pages = st.sidebar.radio('paginas', options=['Home','Datasets', 'Visualisaties', 'Einde'])
 
 if pages == 'Home':
-    st.markdown("Welkom op het dashboard van groep 22. Gebruik de knoppen in de sidebar om tussen de verschillende paginas te navigeren. ")
+    st.markdown("Welkom op het dashboard van Noah Wijnheijmer en Julius Slobbe. Samen hebben wij gekozen om de dataset 'unemployment analysis' te kiezen, dit hebben wij gedaan omdat het ten eerste ons een leuke dataset leek en ten tweede omdat wij vonden dat er goed gewerkt kon worden met deze data set.")
+    st.markdown("Gebruik de knoppen in de sidebar om tussen de verschillende paginas te navigeren. ")
 elif pages == 'Datasets':
     st.subheader('Gebruikte Datasets.')
     st.markdown("Hieronder wordt de dataset met data over het gebruik van de unemployment weergegeven.")
