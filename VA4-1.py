@@ -166,7 +166,6 @@ countries = gpd.read_file('countries.geojson')
 
 dfn = countries.merge(unemp_long, left_on='ISO_A3', right_on='Country Code',how='right')
 
-[22:44] Noah Wijnheijmer
 m = folium.Map(location=[0,0], zoom_start=1, zoom_control=False, tiles='Cartodb Positron')
     folium.Choropleth(geo_data = countries,                 
     name = 'geometry',                 
