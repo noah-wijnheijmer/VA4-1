@@ -166,20 +166,23 @@ plt.show()
 #import folium
 
 
-#countries = gpd.read_file('countries.geojson')
+countries = gpd.read_file('countries.geojson')
 
-#dfn = countries.merge(unemp_long, left_on='ISO_A3', right_on='Country Code',how='right')
+dfn = countries.merge(unemp_long, left_on='ISO_A3', right_on='Country Code',how='right')
 
-#leg_kwds= {'label': 'Unemployment rate',
-#           'orientation': "horizontal"
-           
-#           }
-# dfn1= dfn.plot(column='Unemployment Rate',
-                #cmap='RdGy', #kleurenpalette
-                #edgecolor= (0,0,0,0.6), #opacity = 0.6
-                #figsize=(9,8),
-                #legend= True,
-                #legend_kwds=leg_kwds)
+m = folium.Map(location=[0,0], zoom_start=1, zoom_control=False, tiles='Cartodb Positron')
+folium.Choropleth(geo_data = countries,
+                 name = 'geometry',
+                 data = dfn,
+                 columns = ['ADMIN', 'Unemployment Rate'],
+                 key_on = 'feature.properties.ADMIN',
+                 fill_color = 'RdGy',
+                 fill_opacity=0.5,
+                 line_opacity=0.2,
+                 zoom_on_click=True,
+                 legend_name = 'unemployment rate per country').add_to(m)
+
+m
 
 
 #plt.title('Unemployment rate per country')
@@ -315,6 +318,8 @@ elif pages == 'Visualisaties':
     st.pyplot(fig1) 
     st.markdown("Hieronder wordt een grafiek weergegeven met een overzicht van de 10 laagste unemployment rate landen wereldwijd.")
     st.pyplot(fig3)
+elif pages == 'Visualisaties':
+    folium_static(m)
 elif pages == 'Einde':
     st.markdown('Bedankt voor het bezoeken.')
     st.markdown('Noah Wijnheimer, Julius Slobbe')
