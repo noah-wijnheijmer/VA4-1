@@ -184,7 +184,7 @@ plt.show()
 
 
 happiness= pd.read_csv('world-happiness-report-2021.csv')
-happiness
+#happiness
 
 
 # In[27]:
