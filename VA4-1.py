@@ -269,7 +269,7 @@ happiness_merge['unemployment_rate']= np.array([ 7.53,  4.8,  5.32,  5.4,  4.01,
 # In[45]:
 
 
-st.set_page_config(page_title="Dashboard Noah en Julius", layout = "wide", initial_sidebar_state="expanded")
+#st.set_page_config(page_title="Dashboard Noah en Julius", layout = "wide", initial_sidebar_state="expanded")
 
 
 # In[46]:
