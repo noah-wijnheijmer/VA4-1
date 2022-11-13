@@ -310,12 +310,3 @@ elif pages == 'Visualisaties':
 elif pages == 'Einde':
     st.markdown('Bedankt voor het bezoeken.')
     st.markdown('Noah Wijnheimer, Julius Slobbe')
-    
-    
-
-
-# In[ ]:
-
-
-
-
