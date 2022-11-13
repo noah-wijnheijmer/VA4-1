@@ -100,7 +100,7 @@ df3 = {'Lesotho':30.396452 , 'North Macedonia':29.789677 , 'South Africa':28.232
 courses = list(df3.keys())
 values = list(df3.values())
   
-fig1 = plt.figure(figsize = (12, 6))
+fig1 = plt.figure(figsize = (12, 6)
  
 # creating the bar plot
 plt.bar(courses, values, color ='r',
