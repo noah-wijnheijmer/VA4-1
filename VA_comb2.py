@@ -250,20 +250,20 @@ happiness_merge['unemployment_rate']= np.array([ 7.53,  4.8,  5.32,  5.4,  4.01,
 
 
 # Create a new figure, fig
-dfn3 = plt.figure()
+#dfn3 = plt.figure()
 
-sns.regplot(x=x,
-            y=y,
-            data=happiness_merge,
-            dropna = True,
-            ci=60)
+#sns.regplot(x=x,
+#            y=y,
+#            data=happiness_merge,
+#            dropna = True,
+ #           ci=60)
 # Add a scatter plot layer to the regplot
-sns.scatterplot(x=x,
-            y=y,
-            data=happiness_merge,
-            color= 'red')
+#sns.scatterplot(x=x,
+ #           y=y,
+ #           data=happiness_merge,
+#            color= 'red')
 # Show the layered plot
-plt.show()
+#plt.show()
 
 
 # In[35]:
