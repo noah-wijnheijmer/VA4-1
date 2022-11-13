@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+st.set_page_config(page_title="Dashboard Noah en Julius", layout = "wide", initial_sidebar_state="expanded")
+
 # In[43]:
 
 
