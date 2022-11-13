@@ -296,7 +296,7 @@ elif pages == 'Datasets':
     st.markdown("Hieronder wordt de dataset met data over het gebruik van de unemployment weergegeven.")
     st.dataframe(data=unemp_long, use_container_width=False)
     st.subheader('Dataset van de wereldwijde happiness.')
-    st.markdown("Deze dataset gebruiken wij om te vergelijken op land code, wat de correlatie is tussen de unemployment rate en de happiness rate in een land. deze data sets zijn samengevoegd door de 'Country Name', te mergen.)
+    st.markdown("Deze dataset gebruiken wij om te vergelijken op land code, wat de correlatie is tussen de unemployment rate en de happiness rate in een land. deze data sets zijn samengevoegd door de 'Country Name', te mergen.")
     st.dataframe(data=df1, use_container_width=False)
 elif pages == 'Visualisaties':
     st.subheader("Hier worden de visualisaties weergegeven die wij hebben opgesteld."), st.plotly_chart(fig1) 
