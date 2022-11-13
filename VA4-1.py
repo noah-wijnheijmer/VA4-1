@@ -305,7 +305,7 @@ elif pages == 'Datasets':
     st.dataframe(data=happiness_merge, use_container_width=False)
 elif pages == 'Visualisaties':
     st.subheader("Hier worden de visualisaties weergegeven die wij hebben opgesteld.")
-    st.plotly_chart(fig, use_container_width=True), st.plotly_chart(fig1, use_container_width=True), st.plotly_chart(fig3, use_container_width=True)
+    st.plotly_chart(fig, use_container_width=True), st.plotly_chart(fig1, use_container_width=True)#, st.plotly_chart(fig3, use_container_width=True)
 elif pages == 'Einde':
     st.markdown('Bedankt voor het bezoeken.')
     st.markdown('Noah Wijnheimer, Julius Slobbe')
