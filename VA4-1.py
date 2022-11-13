@@ -30,6 +30,8 @@ import streamlit_folium as st_folium
 from streamlit_folium import folium_static
 import matplotlib.pyplot as plt
 
+
+
 st.set_page_config(page_title="Dashboard Noah en Julius", layout = "wide", initial_sidebar_state="expanded")
 
 # In[3]:
