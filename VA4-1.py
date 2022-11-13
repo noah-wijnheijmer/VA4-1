@@ -139,19 +139,19 @@ plt.show()
 # In[16]:
 
 
-gk = unemp_long.groupby('Year')
-gk.get_group('1991')
+#gk = unemp_long.groupby('Year')
+#gk.get_group('1991')
 
 
 # In[17]:
 
 
-fig4 = plt.scatter(x="Year", y="Unemployment Rate", data=unemp_long)
-plt.title("Unemployment Rate", size=20, color="red")
-plt.xlabel("Year")
-plt.xticks(rotation = 90) 
+#fig4 = plt.scatter(x="Year", y="Unemployment Rate", data=unemp_long)
+#plt.title("Unemployment Rate", size=20, color="red")
+#plt.xlabel("Year")
+#plt.xticks(rotation = 90) 
 #plt.ylabel("Unemployment Rate")
-plt.show()
+#plt.show()
 
 
 # In[20]:
@@ -309,7 +309,6 @@ elif pages == 'Visualisaties':
     st.plotly_chart(fig, use_container_width=True)
     st.markdown("Hieronder wordt een barplot weergegeven met een overzicht van de 10 hoogste unemployment rate landen wereldwijd.")
     st.pyplot(fig1) 
-elif pages == 'Visualisaties 1':
     st.markdown("Hieronder wordt een grafiek weergegeven met een overzicht van de 10 laagste unemployment rate landen wereldwijd.")
     st.pyplot(fig3)
 elif pages == 'Einde':
