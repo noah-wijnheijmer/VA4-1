@@ -180,7 +180,7 @@ folium.Choropleth(geo_data = countries,
                  zoom_on_click=True,
                  legend_name = 'unemployment rate per country').add_to(m)
 
-m
+#m
 
 
 #plt.title('Unemployment rate per country')
