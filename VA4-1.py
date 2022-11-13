@@ -102,8 +102,8 @@ values = list(df3.values())
 fig1 = plt.figure(figsize = (12, 6)
  
 # creating the bar plot
-plt.bar(courses, values, color ='r',
-        width = 0.4)
+#plt.bar(courses, values, color ='r',
+        #width = 0.4)
  
 plt.xticks(rotation = 45) 
 plt.ylabel("% Unemployed")
