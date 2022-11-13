@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-st.set_page_config(page_title="Dashboard Noah en Julius", layout = "wide", initial_sidebar_state="expanded")
+#st.set_page_config(page_title="Dashboard Noah en Julius", layout = "wide", initial_sidebar_state="expanded")
 
 # In[43]:
 
@@ -21,6 +21,8 @@ import plotly.express as px
 import streamlit as st
 import streamlit
 
+
+st.set_page_config(page_title="Dashboard Noah en Julius", layout = "wide", initial_sidebar_state="expanded")
 
 # In[3]:
 
