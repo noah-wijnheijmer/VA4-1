@@ -304,7 +304,8 @@ elif pages == 'Datasets':
     st.markdown("Deze dataset gebruiken wij om te vergelijken op land code, wat de correlatie is tussen de unemployment rate en de happiness rate in een land. deze data sets zijn samengevoegd door de 'Country Name', te mergen.")
     st.dataframe(data=happiness_merge, use_container_width=False)
 elif pages == 'Visualisaties':
-    st.subheader("Hier worden de visualisaties weergegeven die wij hebben opgesteld."), st.plotly_chart(fig, use_container_width=True), st.plotly_chart(fig1, use_container_width=True), st.plotly_chart(fig3, use_container_width=True)
+    st.subheader("Hier worden de visualisaties weergegeven die wij hebben opgesteld."), 
+    st.plotly_chart(fig, use_container_width=True), st.plotly_chart(fig1, use_container_width=True), st.plotly_chart(fig3, use_container_width=True)
 elif pages == 'Einde':
     st.markdown('Bedankt voor het bezoeken.')
     st.markdown('Noah Wijnheimer, Julius Slobbe')
