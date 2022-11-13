@@ -157,29 +157,29 @@ plt.show()
 # In[20]:
 
 
-#import geopandas as gpd
-#import matplotlib.pyplot as plt
-#import folium
+import geopandas as gpd
+import matplotlib.pyplot as plt
+import folium
 
 
-#countries = gpd.read_file('countries.geojson')
+countries = gpd.read_file('countries.geojson')
 
-#dfn = countries.merge(unemp_long, left_on='ISO_A3', right_on='Country Code',how='right')
+dfn = countries.merge(unemp_long, left_on='ISO_A3', right_on='Country Code',how='right')
 
-#leg_kwds= {'label': 'Unemployment rate',
-#           'orientation': "horizontal"
+leg_kwds= {'label': 'Unemployment rate',
+           'orientation': "horizontal"
            
-#           }
-# dfn1= dfn.plot(column='Unemployment Rate',
-                #cmap='RdGy', #kleurenpalette
-                #edgecolor= (0,0,0,0.6), #opacity = 0.6
-                #figsize=(9,8),
-                #legend= True,
-                #legend_kwds=leg_kwds)
+           }
+ dfn1= dfn.plot(column='Unemployment Rate',
+                cmap='RdGy', #kleurenpalette
+                edgecolor= (0,0,0,0.6), #opacity = 0.6
+                figsize=(9,8),
+                legend= True,
+                legend_kwds=leg_kwds)
 
 
-#plt.title('Unemployment rate per country')
-#plt.show()
+plt.title('Unemployment rate per country')
+plt.show()
 
 
 # In[24]:
@@ -311,6 +311,8 @@ elif pages == 'Visualisaties':
     st.pyplot(fig1) 
     st.markdown("Hieronder wordt een grafiek weergegeven met een overzicht van de 10 laagste unemployment rate landen wereldwijd.")
     st.pyplot(fig3)
+elif pages == 'Wereld kaart':
+    st.subheader('Hier word een visualisatie weergegeven van de unemployment rate wereldwijd')
 elif pages == 'Einde':
     st.markdown('Bedankt voor het bezoeken.')
     st.markdown('Noah Wijnheimer, Julius Slobbe')
