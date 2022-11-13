@@ -146,7 +146,7 @@ gk.get_group('1991')
 # In[17]:
 
 
-fig4 = sns.scatterplot(x="Year", y="Unemployment Rate", data=unemp_long)
+fig4 = plt.scatter(x="Year", y="Unemployment Rate", data=unemp_long)
 plt.title("Unemployment Rate", size=20, color="red")
 plt.xlabel("Year")
 plt.xticks(rotation = 90) 
@@ -310,7 +310,7 @@ elif pages == 'Visualisaties':
     st.markdown("Hieronder wordt een barplot weergegeven met een overzicht van de 10 hoogste unemployment rate landen wereldwijd.")
     st.pyplot(fig1) 
     st.markdown("Hieronder wordt een grafiek weergegeven met een overzicht van de 10 laagste unemployment rate landen wereldwijd.")
-    st.pyplot(fig4)
+    st.pyplot(fig3)
 elif pages == 'Einde':
     st.markdown('Bedankt voor het bezoeken.')
     st.markdown('Noah Wijnheimer, Julius Slobbe')
