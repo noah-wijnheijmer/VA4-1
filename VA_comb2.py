@@ -229,21 +229,21 @@ happiness_merge['unemployment_rate']= np.array([ 7.53,  4.8,  5.32,  5.4,  4.01,
 # In[33]:
 
 
-import statsmodels.api as sm
-x = happiness_merge["Freedom to make life choices"]
-y = happiness_merge["unemployment_rate"]
+#import statsmodels.api as sm
+#x = happiness_merge["Freedom to make life choices"]
+#y = happiness_merge["unemployment_rate"]
 
 
 # model = sm.OLS(y, x).fit()
 
-import statsmodels.formula.api as smf
-model = smf.ols(formula = "x ~ y", data=happiness_merge)
-model = model.fit()
+#import statsmodels.formula.api as smf
+#model = smf.ols(formula = "x ~ y", data=happiness_merge)
+#model = model.fit()
 
-predictions = model.predict() 
+#predictions = model.predict() 
 
-dfn2= model.summary()
-dfn2
+#dfn2= model.summary()
+#dfn2
 
 
 # In[34]:
