@@ -310,8 +310,7 @@ elif pages == 'Visualisaties':
     st.markdown("Hieronder wordt een barplot weergegeven met een overzicht van de 10 hoogste unemployment rate landen wereldwijd.")
     st.pyplot(fig1) 
     st.markdown("Hieronder wordt een grafiek weergegeven met een overzicht van de 10 laagste unemployment rate landen wereldwijd.")
-    st.pyplot(fig3)
-    st.folium_static(m)
+    st.pyplot(fig3), folium_static(m)
 elif pages == 'Wereld kaart':
     st.subheader('Hier word een visualisatie weergegeven van de unemployment rate wereldwijd')
 elif pages == 'Einde':
