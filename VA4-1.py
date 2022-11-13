@@ -7,6 +7,7 @@
 
 
 #!pip install streamlit
+#!pip install streamlit_folium
 
 
 # In[44]:
@@ -14,11 +15,19 @@
 
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
+import plotly.express as px 
+import plotly.figure_factory as ff
+import plotly.graph_objects as go
+from plotly.subplots import make_subplots
 import seaborn as sns
-import geopandas as gpd
-import plotly.express as px
 import streamlit as st
+import geopandas as gpd
+import requests
+import streamlit
+import folium 
+import json
+import streamlit_folium as st_folium
+from streamlit_folium import folium_static
 
 st.set_page_config(page_title="Dashboard Noah en Julius", layout = "wide", initial_sidebar_state="expanded")
 
@@ -155,12 +164,6 @@ plt.show()
 
 
 # In[20]:
-
-
-import geopandas as gpd
-import matplotlib.pyplot as plt
-import folium
-
 
 countries = gpd.read_file('countries.geojson')
 
