@@ -225,6 +225,8 @@ happiness_merge['unemployment_rate']= np.array([ 7.53,  4.8,  5.32,  5.4,  4.01,
         9.45,  3.69, 11.46,  2.59,  4.0  , 13.03,  5.33,  5.98,  1.79,
         2.65, 15.73,  7.02, 24.6 , 24.72,  1.61, 5.17, 13.28])
 
+happiness_merge= happiness_merge[['Country name','Country Name','Regional indicator','unemployment_rate','Healthy life expectancy',
+                                  'Freedom to make life choices','Generosity','Perceptions of corruption','Logged GDP per capita','Social support' ]]
 
 # In[33]:
 
@@ -298,7 +300,7 @@ elif pages == 'Datasets':
     st.dataframe(data=unemp_long, use_container_width=False)
     st.subheader('Dataset van de wereldwijde happiness.')
     st.markdown("Deze dataset gebruiken wij om te vergelijken op land code, wat de correlatie is tussen de unemployment rate en de happiness rate in een land. deze data sets zijn samengevoegd door de 'Country Name', te mergen.")
-    st.dataframe(data=df1, use_container_width=False)
+    st.dataframe(data=happiness_merge, use_container_width=False)
 elif pages == 'Visualisaties':
     st.subheader("Hier worden de visualisaties weergegeven die wij hebben opgesteld."), st.plotly_chart(fig1) 
 elif pages == 'Einde':
