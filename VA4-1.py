@@ -15,20 +15,16 @@
 
 import pandas as pd
 import numpy as np
-import plotly.express as px 
-import plotly.figure_factory as ff
-import plotly.graph_objects as go
-from plotly.subplots import make_subplots
+import matplotlib.pyplot as plt
 import seaborn as sns
-import streamlit as st
 import geopandas as gpd
-import requests
+import plotly.express as px
+import streamlit as st
 import streamlit
 import folium 
 import json
 import streamlit_folium as st_folium
 from streamlit_folium import folium_static
-import matplotlib.pyplot as plt
 
 
 
