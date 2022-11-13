@@ -299,7 +299,7 @@ elif pages == 'Datasets':
     st.markdown("Dataset met kentekeninformatie. ")
     st.dataframe(data=df1, use_container_width=False)
 elif pages == 'Visualisaties':
-    st.subheader("Hier worden de visualisaties weergegeven die wij hebben opgesteld."), st.plotly_chart(fig1), st.plotly_chart(fig2), st.plotly_chart(fig3), st.plotly_chart(fig4), st.plotly_chart(dfn1), st.plotly_chart(dfn1), st.plotly_chart(dfn2), st.plotly_chart(dfn3) 
+    #st.subheader("Hier worden de visualisaties weergegeven die wij hebben opgesteld."), st.plotly_chart(fig1), st.plotly_chart(fig2), st.plotly_chart(fig3), st.plotly_chart(fig4), st.plotly_chart(dfn1), st.plotly_chart(dfn1), st.plotly_chart(dfn2), st.plotly_chart(dfn3) 
 elif pages == 'Einde':
     st.markdown('Bedankt voor het bezoeken.')
     st.markdown('Noah Wijnheimer, Julius Slobbe')
