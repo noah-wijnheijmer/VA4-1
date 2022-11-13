@@ -67,7 +67,7 @@ df1 = unemp.T
 fig = px.line(df1[['Africa Eastern and Southern', 'Africa Western and Central',"Middle East & North Africa", 'Central Europe and the Baltics',
                     "Europe & Central Asia",
                     'East Asia & Pacific', "Latin America & Caribbean", 'United States', 'Australia']])
-fig1 = fig.history(period= 'year', start='1991' , end='2021')
+fig1 = fig.history(period= 'Year', start='1991' , end='2021')
 fig1.show()
 
 
