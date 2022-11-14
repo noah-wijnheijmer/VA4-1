@@ -20,6 +20,7 @@ import geopandas as gpd
 import plotly.express as px
 import streamlit as st
 import folium
+from streamlit_folium import folium_static
 
 
 st.set_page_config(page_title="Dashboard Noah en Julius", layout = "wide", initial_sidebar_state="expanded")
