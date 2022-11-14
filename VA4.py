@@ -20,6 +20,7 @@ import geopandas as gpd
 import plotly.express as px
 import streamlit as st
 import folium
+import streamlit_folium as st_folium
 from streamlit_folium import folium_static
 
 
