@@ -7,6 +7,7 @@
 
 
 #!pip install streamlit
+#!pip install streamlit_folium
 
 
 # In[44]:
@@ -20,6 +21,8 @@ import geopandas as gpd
 import plotly.express as px
 import streamlit as st
 import folium
+import streamlit_folium as st_folium
+from streamlit_folium import folium_static
 
 
 st.set_page_config(page_title="Dashboard Noah en Julius", layout = "wide", initial_sidebar_state="expanded")
@@ -180,7 +183,7 @@ folium.Choropleth(geo_data = countries,
                  zoom_on_click=True,
                  legend_name = 'unemployment rate per country').add_to(m)
 
-m
+#m
 
 
 #plt.title('Unemployment rate per country')
@@ -296,7 +299,7 @@ st.sidebar.title('Navigatie')
 # In[41]:
 
 
-pages = st.sidebar.radio('paginas', options=['Home','Datasets', 'Visualisaties', 'Einde'])
+pages = st.sidebar.radio('paginas', options=['Home','Datasets', 'Visualisaties', 'Wereld Kaart', 'Einde'])
 
 if pages == 'Home':
     st.markdown("Welkom op het dashboard van Noah Wijnheijmer en Julius Slobbe. Samen hebben wij gekozen om de dataset 'unemployment analysis' te kiezen, dit hebben wij gedaan omdat het ten eerste ons een leuke dataset leek en ten tweede omdat wij vonden dat er goed gewerkt kon worden met deze data set.")
@@ -315,7 +318,9 @@ elif pages == 'Visualisaties':
     st.markdown("Hieronder wordt een barplot weergegeven met een overzicht van de 10 hoogste unemployment rate landen wereldwijd.")
     st.pyplot(fig1) 
     st.markdown("Hieronder wordt een grafiek weergegeven met een overzicht van de 10 laagste unemployment rate landen wereldwijd.")
-    st.pyplot(fig3), folium_static(m)
+    st.pyplot(fig3)
+elif pages == 'Wereld Kaart':    
+    folium_static(m)
 elif pages == 'Einde':
     st.markdown('Bedankt voor het bezoeken.')
     st.markdown('Noah Wijnheimer, Julius Slobbe')
